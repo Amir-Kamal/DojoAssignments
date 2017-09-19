@@ -1,0 +1,204 @@
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ touch aboutme.txt
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ ls
+aboutme.txt  index.html  styles.css
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .aboutMe.txt.swp
+        aboutme.txt
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .aboutMe.txt.swp
+        aboutme.txt
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git commit -m "Initial Commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        .aboutMe.txt.swp
+        aboutme.txt
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .aboutMe.txt.swp
+        aboutme.txt
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git add .
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 8e9624d] Initial Commit
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .aboutMe.txt.swp
+ create mode 100644 aboutme.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ code .
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git add .
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git commit -m "updated aboutme.txt"
+[master 4f19e10] updated aboutme.txt
+ 1 file changed, 3 insertions(+)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git add i
+fatal: pathspec 'i' did not match any files
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git add .
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git commit -m "added favorite movie to aboutme.txt"
+[master c9a94f7] added favorite movie to aboutme.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git log
+commit c9a94f757d43e2b57ac1e51c9b73fe1d3c7ba0aa (HEAD -> master)
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:43:38 2017 -0500
+
+    added favorite movie to aboutme.txt
+
+commit 4f19e10fdcbf81b991d2fb5294c90acdea74a3bb
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:41:49 2017 -0500
+
+    updated aboutme.txt
+
+commit 8e9624d02fb149083c455c1718f5b6bead66bf68
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:36:55 2017 -0500
+
+    Initial Commit
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git revert --no-edit HEAD
+[master d657d4e] Revert "added favorite movie to aboutme.txt"
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   aboutme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git add .
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git commit -m "updated aboutme.txt to add favorite book."
+[master eacda17] updated aboutme.txt to add favorite book.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)
+$ git log
+commit eacda17ada2b56c91972cfbe8fa2b2a73bfaca8d (HEAD -> master)
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:48:43 2017 -0500
+
+    updated aboutme.txt to add favorite book.
+
+commit d657d4e0ca6be063d3523f580bc8206788be4fc3
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:45:08 2017 -0500
+
+    Revert "added favorite movie to aboutme.txt"
+
+    This reverts commit c9a94f757d43e2b57ac1e51c9b73fe1d3c7ba0aa.
+
+commit c9a94f757d43e2b57ac1e51c9b73fe1d3c7ba0aa
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:43:38 2017 -0500
+
+    added favorite movie to aboutme.txt
+
+commit 4f19e10fdcbf81b991d2fb5294c90acdea74a3bb
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:41:49 2017 -0500
+
+    updated aboutme.txt
+
+commit 8e9624d02fb149083c455c1718f5b6bead66bf68
+Author: Vic Agbasi <vicagbasi@gmail.com>
+Date:   Tue Sep 19 07:36:55 2017 -0500
+
+    Initial Commit
+
+IT-SP4+victo@IT-SP4 MINGW32 ~/DojoAssignments/gittest (master)

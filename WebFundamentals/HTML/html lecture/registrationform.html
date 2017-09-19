@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up!</title>
+        <meta charset=UTF-8>
+    </head>
+    <body>
+        <h1>My Registration Form</h1>
+        <form>
+            <table>
+                <tr>
+                    <th><label for="first_name">First Name:</label></th>
+                    <th><input type="text" id="first_name" name="first_name"></th>
+                </tr>
+                <tr>
+                    <th><label for="last_name">Last Name:</label></th>
+                    <th><input type="text" id="last_name" name="last_name"></th>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <th><input type="text" id="email" name="email"></th>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <th><input type="password" id="password" name="password"></th>
+                </tr>
+                <tr>
+                    <th><label for="pw_confirm">Confirm Password:</label></th>
+                    <th><input type="password" id="pw_confirm" name="pwConfirm"></th>
+                </tr>
+                <tr>
+                    <th><label for="birthday">Birthday:</label></th>
+                    <th><input type="date" id="birthday" name="birthday"></th>
+                </tr>
+            </table>
+
+            <br>
+            <input type="checkbox" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="checkbox" id="other" name="gender" value="other">
+            <label for="other">other</label>
+            <br>
+            <br>
+            <label for="describe">A short description about yourself.</label>
+            <br>
+            <textarea name="describe" id="describe">Enter text here...</textarea>
+            <br>
+            <br>
+            <label for="favoriteLanguage">Favorite Language:</label>
+            <select name="favoriteLanguage" id="favoriteLanguage">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Golang">Go</option>
+            </select> 
+
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
