@@ -1,0 +1,150 @@
+
+.container{
+    background-color:#6f5964;
+    width: 900px;
+    height: 1100px;
+    outline: 1px dotted red;
+    margin: 0 auto;
+
+
+}
+
+.header{
+    height: 60px;
+    width: 900px;
+    background-color:white;
+    outline: 3px dotted blue;     
+    
+    
+}
+
+#JayneDoe{
+    display: inline-block;
+    height: 50px;
+    width: 373px;
+    outline: 2px dotted black;
+    padding: 10px 
+}
+
+
+
+#masterOfShadows{
+    height: 39px;
+    width: 473px;
+    display: inline-block;
+    outline: 2px dotted red;
+    padding: 10px;
+}
+
+
+#masterOfShadows h2{
+    text-align: right;
+
+}
+
+.top-third {
+    height: 316px;
+    width: 900px;
+    outline: 1px dotted red;
+}
+.top-third img{
+    width: 381px;
+    height: 266px;
+    padding: 24px;
+    display: inline-block;
+}
+
+
+
+.about{
+    background-color: #f0eaef;
+    width: 439px;
+    height: 266px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 24px;
+
+}
+.about h1{
+    color: white;
+    background-color: gray;
+    margin-top: 0px;
+    height: 30px;
+    text-align: left;
+    padding: 3px;
+}
+.about p{
+    margin: 5px;
+}
+
+
+
+.main-content{
+    outline: 1px dotted red;     
+    
+
+}
+.main-content-container{
+    height: 450px;
+}
+.main-content-container h1{
+    color: white;
+    background-color: gray;
+    margin-top: 0px;
+    height: 30px;
+    text-align: left;
+    padding: 0px;
+}
+
+
+
+
+.main-content-container{
+    height: 685px;
+    padding: 10px;
+    align-content: center;
+}
+
+.main-divider{
+    width: 30%;
+    height: 680px;
+    padding: 6px;
+    margin: 0px 7px 0px 7px;
+    display: inline-block;
+    vertical-align: top;
+    outline: 1px dotted red; 
+    background-color: white;    
+}
+
+.main-divider h3{
+    color: white;
+    background-color: gray;
+    margin-top: 0px;
+
+}
+
+
+.md-pic{
+    height: 200px;
+    width: 270px;    
+}
+.pl-pic{
+    height: 40px;
+    width: 40px;
+
+}
+
+
+
+
+.main-divider p{
+    height: 200px;
+}
+
+
+
+.footer{
+    outline: 1px dotted red;     
+    
+}
