@@ -1,0 +1,74 @@
+
+.container{
+    height: 800px;
+    width: 970px;
+    /* background-image: url("python-BSD.png"); */
+    outline: 1px dotted red;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+}
+--------------------------------------------
+.header{
+    height:100px;
+    width: 950px;
+    outline: 1px dotted red;    
+}
+#nav-bar{
+    height: 50px;
+    width: 900px;
+    outline: 1px dotted red; 
+    
+}
+#python-logo{
+    margin-left: 10px;
+    height: 104px;
+    width: 363px;
+}
+#text-size-choice{
+    height:20px; 
+    width: 930px;
+    text-align: right;
+    margin-right: 13px;
+    
+}
+
+
+
+----------------------
+.search-container{
+    height: 100px;
+    width: 300px;
+    outline: 1px dotted red;
+    display: inline-block;c
+    margin-left: 270px;
+}
+
+.search-bar{
+    height:30px;
+    width:90px;
+}
+
+
+
+
+--------------------------------------
+.top-half{
+    height: 400px;
+    width: 950px;
+
+}
+
+#side-links{
+    height: 300px;
+    width: 200px;
+    outline: 1px dotted red;    
+    display: inline-block;
+}
+
+.descriptive-container{
+    height: 300px;
+    width: 700px;
+    display: inline-block;
+    outline: 1px dotted red;
+    
+}
