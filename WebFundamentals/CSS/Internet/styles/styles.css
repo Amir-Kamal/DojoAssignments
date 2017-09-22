@@ -1,0 +1,260 @@
+.container{
+    height: 1180px;
+    width: 980px;
+}
+/* ========================================= */
+
+#globe {
+    margin-top: 26px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+
+}
+
+.header{
+    width: 978px;
+    height: 144px;
+}
+
+.header span{
+    color:#2a6aa1
+}
+
+.header h1{
+    font-size: 50px;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left: 85px;
+    
+
+}
+
+.header h2{
+    height: 30px;
+    color: white;
+    font-size: 30px;
+    background: rgba(49,111,165,1);
+    background: -moz-linear-gradient(top, rgba(49,111,165,1) 25%, rgba(49,111,165,1) 32%, rgba(84,132,174,1) 42%, rgba(147,171,191,1) 60%, rgba(82,131,174,1) 70%, rgba(49,111,165,1) 75%);
+    background: -webkit-gradient(left top, left bottom, color-stop(25%, rgba(49,111,165,1)), color-stop(32%, rgba(49,111,165,1)), color-stop(42%, rgba(84,132,174,1)), color-stop(60%, rgba(147,171,191,1)), color-stop(70%, rgba(82,131,174,1)), color-stop(75%, rgba(49,111,165,1)));
+    background: -webkit-linear-gradient(top, rgba(49,111,165,1) 25%, rgba(49,111,165,1) 32%, rgba(84,132,174,1) 42%, rgba(147,171,191,1) 60%, rgba(82,131,174,1) 70%, rgba(49,111,165,1) 75%);
+    background: -o-linear-gradient(top, rgba(49,111,165,1) 25%, rgba(49,111,165,1) 32%, rgba(84,132,174,1) 42%, rgba(147,171,191,1) 60%, rgba(82,131,174,1) 70%, rgba(49,111,165,1) 75%);
+    background: -ms-linear-gradient(top, rgba(49,111,165,1) 25%, rgba(49,111,165,1) 32%, rgba(84,132,174,1) 42%, rgba(147,171,191,1) 60%, rgba(82,131,174,1) 70%, rgba(49,111,165,1) 75%);
+    background: linear-gradient(to bottom, rgba(49,111,165,1) 25%, rgba(49,111,165,1) 32%, rgba(84,132,174,1) 42%, rgba(147,171,191,1) 60%, rgba(82,131,174,1) 70%, rgba(49,111,165,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#316fa5', endColorstr='#316fa5', GradientType=0 ); 
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 11px;
+    padding-left: 23px;
+} 
+}
+
+
+
+/* ================================================= */
+
+.side-bar, .main-body{
+    background: rgba(237,237,237,1);
+    background: -moz-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 1%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(1%, rgba(237,237,237,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(76%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 1%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 1%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 1%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 1%, rgba(246,246,246,1) 47%, rgba(255,255,255,1) 76%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=0 );
+}
+.side-bar{
+    height: auto;
+    width: 248px;
+    vertical-align: top;
+    display: inline-block;
+    
+}
+.side-bar h1{
+    font-size: 21px;
+    font-family: serif;
+    color: black;
+    text-align: left;
+
+}
+.side-bar span{
+    color:blue;
+}
+
+#reinvent{
+    font-size:30px;
+    color: white;
+    text-align: center
+}
+.side-bar h3{
+    height: 40px;
+    width: 216px;
+    text-align: center;
+    font: 60px;
+    color: white;
+    background-color: #2a6aa1;
+    border-radius: 5px;
+    margin: 3px 15px;
+    box-shadow: 10px 10px 5px;
+    padding-top: 10px;
+    
+
+}
+
+#watch{
+    margin-top: 35px;
+    
+}
+#more-resources{
+    background-color: #ef7900;
+    margin-bottom: 20px;
+}
+
+
+
+.side-ad{
+    padding: 9px;
+    height: 393px;
+    width: 229px;
+    margin-top: 50px;
+    background-image: url("../images/ad_background.png"); 
+}
+.side-ad img{
+    
+    margin-bottom: 16px;
+    margin-left: 56px;
+    height: 156px;
+    width: 122px;
+}
+#learn-more{
+    margin-left: 18px;
+    background-color: 02c5df;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 9px;
+    padding-left: 44px;
+    padding-right: 40px;
+    border-radius: 7px;
+
+}
+
+.side-ad span{
+    font-size:8px;
+    color: white;
+}
+
+
+/* ====================================================== */
+
+.main-body {
+    height: 768px;
+    width: 725px;
+    display: inline-block;
+    
+}
+
+.body-nav{
+    width: 726px;
+    height: 68px;
+}
+
+.left-body-nav {
+    height: 67px;
+    width: 461px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+#home-pic {
+    height:30px;
+    width: 30px;
+    display:inline-block;
+}
+#DNS{
+    margin: 0 auto;
+    display:inline-block;
+    
+}
+
+.right-body-nav{
+    height: 60px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+#blu-phone{
+    height: 56px;
+    width: 56px;
+    display: inline-block;
+}
+#time-numbers{
+    width: 200px;
+    display: inline-block;
+    margin-left: 35px;
+}
+
+#small-numbers{
+    width: 200px;
+    text-align: right;    
+    margin: 0px;
+    font-size: 12px;
+    padding-left:0px;
+}
+#big-blue-number{
+    text-align: right;
+    font-size: 30px;
+    color: #02bfdf;
+    margin: 0px;
+    margin-left:35px;
+    
+}
+.main-section{
+    font-size: 20px;
+    border-top: 3px solid gray;
+}
+
+.main-section h1{
+    font-size: 21px;
+    margin: 0.67em 0;
+    color: #2a6aa1;
+}
+
+#client-server{
+    height: auto;
+    width: 279px;
+    margin-left: 212px;
+}
+
+/* ========================================================== */
+
+
+.big3 {
+border:5px solid #0085e0;    
+}
+#big3-pic {
+    height: auto;
+    border-style: none;
+    width: 110px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.big3 h1{
+    font-weight:bold;
+    font-size: 21px;
+    margin: 0.67em 0;
+    color: #2a6aa1;
+}
+
+.big3-body{
+    display: inline-block;
+    width:600px;
+    ;
+    
+}
+
+
+/* ================================================================= */
