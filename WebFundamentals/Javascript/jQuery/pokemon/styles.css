@@ -1,0 +1,24 @@
+.container{
+    height: auto;
+    width: 1920px;
+    background-image: url('starter-pack.jpg');
+
+}
+
+
+.poke{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+}
+
+/* #wrap{
+    width: auto;
+    height: auto;
+    background-image: url(https://orig00.deviantart.net/d836/f/2017/110/0/e/pokedex_phone_wallpaper_part_1_by_thedeeman222official-db6j629.jpg)
+}
+.poke{
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+} */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pokedex</title>
+        <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            $(document).ready(function(){
+                for(var poke=1;poke<=151;poke++)
+                {
+                    // console.log(poke)
+                    $(".container").append(`<img src='https://pokeapi.co/media/img/${poke}.png' class='poke'>`)
+                }
+                    console.log("https://pokeapi.co/api/v2/pokemon/7/")
+                })
+        </script>
+    </head>
+    <body>
+        <div class="container">
+        </div>
+    
+    </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="pokedex.css">
+    <script>
+        $(document).ready(function(){
+            for(var poke=1;poke<=151;poke++)
+            {
+                console.log(poke)
+                $("#wrap").append(`<img src='https://pokeapi.co/media/img/${poke}.png' class='poke'>`)
+            }
+                console.log="https://pokeapi.co/api/v2/pokemon/7/"
+            })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+
+    </div>
+    
+</body>
+</html> -->
