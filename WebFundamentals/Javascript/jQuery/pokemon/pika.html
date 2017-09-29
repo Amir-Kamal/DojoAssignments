@@ -11,46 +11,47 @@
         <link rel="stylesheet" href="styles.css">
         <script>
             $(document).ready(function(){
-                for(var poke=1;poke<=151;poke++)
+                // This pulls all the images from the api to dynamically render on the main container
+                for(var poke = 1; poke <= 151; poke++)
                 {
                     // console.log(poke)
-                    $(".container").append(`<img src='https://pokeapi.co/media/img/${poke}.png' class='poke'>`)
+                    $(".main-container").append(`<img class='poke' id="${poke}" src='https://pokeapi.co/media/img/${poke}.png'>`)
                 }
-                    console.log("https://pokeapi.co/api/v2/pokemon/7/")
+
+                    // console.log("https://pokeapi.co/api/v2/pokemon/7/")
+                $(".main-container img").click(function(){
+                    var pokeNumb = $(this).attr('id');   
+                    console.log(`https://pokeapi.co/api/v2/pokemon/${pokeNumb}/`)
+                    $.get(`https://pokeapi.co/api/v2/pokemon/${pokeNumb}/`, function(ape){
+                        var ash = "";
+                        var tip = ape.types;
+                        var name = ape.name;
+                        ash = `<h1 id='pokemanz-title'>${name[0].toUpperCase()+name.substring(1,).toLowerCase()}</h1>`;
+                        ash += `<img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokeNumb}.png'>`;
+                        ash += "<h3>Types<h3>";
+                        ash += "<p>"
+
+                        for (var x = 0; x < tip.length; x++) {
+                            console.log(tip[x]);
+                            ash += `${tip[x].type.name}, `;
+                        }
+
+                        ash += "<p>";
+                        ash += "<h3>Height</h4>";
+                        ash += `<p>${ape.height}</p>`;
+                        ash += "<h3>Weight</h3>";
+                        ash += `<p>${ape.weight}</p>`;
+                        console.log(ash)
+                        $(".side-container").html(ash);
+                        
+                    }, 'json');
                 })
+            })
+            // https://pokeapi.co/media/img/3.png
         </script>
     </head>
     <body>
-        <div class="container">
-        </div>
-    
+        <div class="main-container"></div>
+        <div class="side-container"></div>        
     </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pokedex</title>
-    <script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-    <link rel="stylesheet" href="pokedex.css">
-    <script>
-        $(document).ready(function(){
-            for(var poke=1;poke<=151;poke++)
-            {
-                console.log(poke)
-                $("#wrap").append(`<img src='https://pokeapi.co/media/img/${poke}.png' class='poke'>`)
-            }
-                console.log="https://pokeapi.co/api/v2/pokemon/7/"
-            })
-    </script>
-</head>
-<body>
-    <div id="wrap">
-
-    </div>
-    
-</body>
-</html> -->
