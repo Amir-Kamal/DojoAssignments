@@ -17,9 +17,10 @@ body {
     display: inline-block;
 }
 .side-container{
-    height: 1365px;
-    width: 700px;
-    background-color: lightgray;
+    height: 1345px;
+    width: 500px;
+    color: white;
+    background-color: black;
     display: inline-block;
     vertical-align: top;
 
@@ -34,7 +35,7 @@ body {
 .side-container img{
     height: 360px;
     width: 360px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 .side-container h1{
@@ -44,7 +45,7 @@ body {
 .side-container h3{
     font-size: 58px;
     margin: 3px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid gray;
 }
 
 .side-container p{
