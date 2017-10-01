@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Weather Exercise</title>
+    <style>
+        body{
+            margin: 0 auto;
+            height: 700px;
+            width: 2000px;
+        }
+        label{
+            margin: 2px;
+        }
+        p:nth-child(3){
+            margin: 0px;
+
+        }
+        .api-gen-pic{
+            border: 1px dotted rebeccapurple;
+            width: 1120px;
+            height: 700px;
+            display: inline-block;
+        }
+        .api-gen-pic{
+            width: 1120px;
+            height: 700px;
+        }
+        .search-container {
+            width: 250px;
+            height: 700px;
+            display: inline-block;
+            vertical-align: top;
+            border: 1px dotted forestgreen;
+            padding-left: 15px;
+        }
+        .api-content {
+            height: 285px;
+            width: 200px;
+            border: 1px dotted darkolivegreen;
+            margin-left: 14px;
+            margin-top: 25px;
+        }
+        
+
+    
+    </style>
+    <script>
+        // //Callbacks for jQuery event listeners
+        // // function attach_handlers() {
+        // //     // $(document).on('submit', '.api-gen-pic img', function(){
+        // //     if (weather.includes("clear")){
+        // //         console.log(`${weather}`)
+        // //         $('.api-gen-pic img').attr('src', 'images/clear.jpg');
+        // //     }
+
+        // }
+        // jQuery functon start listening across entire page
+        $(document).ready(function() {
+            // When submit is pushed dynamically render more html
+            $("form").submit(function() {
+            
+            var apiKey = "e897eacf41f06787bccc3ff592ba830b";
+            var metro = $('input#city').val();
+            console.log(`${metro}`)
+            // dynamically rendering pic through ajax request :)
+            $.get(`https://api.openweathermap.org/data/2.5/weather?q=${metro}&units=imperial&appid=${apiKey}`, function(dat1){
+                var weather = dat1['weather'][0]['description']
+                if (weather.includes("cloud")){
+                console.log(`${weather}-picture should be showing!`)
+                $('.api-gen-pic img').attr('src', 'images/clear.jpg')}});
+
+            //rendering side bar through a ajax request
+            $.get(`https://api.openweathermap.org/data/2.5/weather?q=${metro}&units=imperial&appid=${apiKey}`, function(dat){
+                // show data in console for reference
+                console.log(dat)
+                var weather = dat['weather'][0]['description'];
+                var htmlstr = "";
+                
+                htmlstr += `<h1> ${dat['name']} </h1>`;
+                htmlstr += `<p> Description: ${weather} </p>`;
+                htmlstr += `<p> Temperature: ${dat['main']['temp']} </p>`;
+                $('.api-content').html(htmlstr);
+
+                
+                
+
+         
+            }, 'json');
+            return false;
+                
+            })
+        });
+    
+    </script>
+
+</head>
+<body>
+    <div class="search-container">
+    <h1>What's the Weather?</h1>
+    <form>
+        <label>Choose city:</label>
+        <p><input type="text" id="city"></p>
+        <!-- <p>or</p>
+        <p><input type="text" id="zip-code" value="Zip Code"></p> -->
+        <input type="submit" value="Submit">
+    </form>
+    <div class="api-content"></div>
+    </div>
+    
+    <div class="api-gen-pic">
+    <img src="">
+    </div>
+    
+</body>
+</html>

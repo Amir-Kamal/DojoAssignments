@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var worldBuilder = "";
+
+            for(var x = 0; i < 10; x++){
+                worldBuilder += '<div class="row">';
+                for (var c = 0 ; j < 10; c++){
+                    worldBuilder += '<div class="wall"></div>'
+                }
+                worldBuilder += '</div>';
+                
+            }
+            $('.world').append('<div class="wall"></div>');
+        })
+
+    </script>
+
+    <style>
+    .container{
+        background-color: black;
+    }
+    .wall{
+        background-image: url('wall.png');
+        height: 50px;
+        width: 50px;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+   <div class="container">
+
+    </div> 
+</body>
+</html>
