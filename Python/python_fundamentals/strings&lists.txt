@@ -1,0 +1,63 @@
+Python 3.6.2 (v3.6.2:5fd33b5, Jul  8 2017, 04:57:36) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> words = "It's thanksgiving day. It's my birthday, too!"
+>>> words.find("day")
+18
+>>> words.replace("day", "month")
+"It's thanksgiving month. It's my birthmonth, too!"
+>>> x = [2, 54, -2, 7, 12, 98]
+>>> x.min()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'min'
+>>> min(x)
+-2
+>>> max(x)
+98
+>>> i = ["hello", 2, 54, -2, 7, 12, 98, "world"]
+>>> i[0]
+'hello'
+>>> i[-1]
+'world'
+>>> newList = [ i[0], i[-1]]
+>>> print (newList)
+['hello', 'world']
+>>> x = [ 19, 2, 54, -2, 7, 12, 98, 32, 10, -3, 6]
+>>> sorted(x)
+[-3, -2, 2, 6, 7, 10, 12, 19, 32, 54, 98]
+>>> x1 = x[:len(x)/2]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: slice indices must be integers or None or have an __index__ method
+>>> x1 = x[:(len(x)/2)]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: slice indices must be integers or None or have an __index__ method
+>>> x1 = x[:6]
+>>> print (x1)
+[19, 2, 54, -2, 7, 12]
+>>> x = sorted(x)
+>>> print(x)
+[-3, -2, 2, 6, 7, 10, 12, 19, 32, 54, 98]
+>>> x1 = x[:6]
+>>> print (x1)
+[-3, -2, 2, 6, 7, 10]
+>>> x1 = x[:5]
+>>> print(x)
+[-3, -2, 2, 6, 7, 10, 12, 19, 32, 54, 98]
+>>> print(x1)
+[-3, -2, 2, 6, 7]
+>>> x2=x[5:]
+>>> print(x2)
+[10, 12, 19, 32, 54, 98]
+>>> x3 = x2.insert(1, x1)
+>>> print(x3)
+None
+>>> x3 = x2
+>>> print(x2)
+[10, [-3, -2, 2, 6, 7], 12, 19, 32, 54, 98]
+>>> x2.pop([1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'list' object cannot be interpreted as an integer
+>>>

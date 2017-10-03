@@ -49,29 +49,37 @@
     
     </style>
     <script>
-        // //Callbacks for jQuery event listeners
-        // // function attach_handlers() {
-        // //     // $(document).on('submit', '.api-gen-pic img', function(){
-        // //     if (weather.includes("clear")){
-        // //         console.log(`${weather}`)
-        // //         $('.api-gen-pic img').attr('src', 'images/clear.jpg');
-        // //     }
-
-        // }
         // jQuery functon start listening across entire page
         $(document).ready(function() {
             // When submit is pushed dynamically render more html
             $("form").submit(function() {
-            
             var apiKey = "e897eacf41f06787bccc3ff592ba830b";
             var metro = $('input#city').val();
             console.log(`${metro}`)
             // dynamically rendering pic through ajax request :)
             $.get(`https://api.openweathermap.org/data/2.5/weather?q=${metro}&units=imperial&appid=${apiKey}`, function(dat1){
                 var weather = dat1['weather'][0]['description']
-                if (weather.includes("cloud")){
-                console.log(`${weather}-picture should be showing!`)
-                $('.api-gen-pic img').attr('src', 'images/clear.jpg')}});
+                if (weather.includes('rain')){
+                    console.log(`${weather}-picture should be showing!`)
+                    $('.api-gen-pic img').attr('src', 'images/rain.jpg')};
+                if (weather.includes('snow')){
+                    console.log(`${weather}-picture should be showing!`)
+                    $('.api-gen-pic img').attr('src', 'images/snow.jpg')};
+                if (weather.includes('thunderstorm')){
+                    console.log(`${weather}-picture should be showing!`)
+                    $('.api-gen-pic img').attr('src', 'images/thunderstorm.jpg')};
+                if (weather.includes('clear')){
+                    console.log(`${weather}-picture should be showing!`)
+                    $('.api-gen-pic img').attr('src', 'images/clear.jpg')};
+                if (weather.includes('cloud')){
+                    console.log(`${weather}-picture should be showing!`)
+                    $('.api-gen-pic img').attr('src', 'images/cloud.jpg')};
+                if (weather.includes('drizzle')){
+                    console.log(`${weather}-picture should be showing!`)
+                    $('.api-gen-pic img').attr('src', 'images/drizzle.jpg')};
+
+
+                });
 
             //rendering side bar through a ajax request
             $.get(`https://api.openweathermap.org/data/2.5/weather?q=${metro}&units=imperial&appid=${apiKey}`, function(dat){
@@ -82,7 +90,7 @@
                 
                 htmlstr += `<h1> ${dat['name']} </h1>`;
                 htmlstr += `<p> Description: ${weather} </p>`;
-                htmlstr += `<p> Temperature: ${dat['main']['temp']} </p>`;
+                htmlstr += `<p> Temperature: ${dat['main']['temp']} F</p>`;
                 $('.api-content').html(htmlstr);
 
                 
