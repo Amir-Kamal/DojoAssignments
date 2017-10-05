@@ -55,7 +55,7 @@ def idol():
 
     path = """You were never know for your abilities to distinguish between eldrict cursed objects from objects that 
     are not of the sort but considering a vast wealth outways a utensil made for cutting paper and soft materials it seemed liked 
-    the better otption. Oh well you have an eternity to mull over your decisions as a golden statue."""
+    the better option. Oh well you have an eternity to mull over your decisions as a golden statue."""
 
     choice1 = "Game"
     choice2 = "Over"
@@ -67,9 +67,9 @@ def idol():
 def scissors():
     hdr_statement = "A Treasure to Hold Dear"
 
-    path = """observing the idol it seems too heavy too carry and besides most likely those scissors are made of magic or something. 
-    content with your decision you snatched up the scissors and zipped out the front door. Sadly your moment of rebelious triumph was 
-    short lived as you stumble on the door mat. As you see the blades aproach closer to your face you cant help but hear the voice or 
+    path = """observing the idol it seems too heavy to carry and besides most likely those scissors are made of magic or something. 
+    content with your decision you snatched up the scissors and zip out the front door. Sadly your moment of rebelious triumph was 
+    short lived as you stumble on the door mat. As you see the blades aproach closer to your face you can't help but hear the voice of 
     your parents say 'I told you so'"""
 
     choice1 = "Game"
@@ -84,7 +84,7 @@ def scissors():
 def power():
     hdr_statement = "Abra cad abra"
 
-    path = "You step before him and kneel and a sinister thought comes up, 'will you act upon it or be still?'"
+    path = "As you step before him and kneel a sinister thought comes up, 'will you act upon it or be still?'"
 
     choice1 = "Steal the staff!"
     choice2 = "Stay still!"
@@ -100,8 +100,8 @@ def steal():
     hdr_statement = "The Obviously Cursed Idol"
 
     path = """As the wizard aproaches, you snatch his staff from him. his horrified expression 
-worsens as voices begin to invade your mind. As if out your control a beam of 
-black magic envelops the wizard. all that remains is dust. of well free house."""
+worsens as voices begin to invade your mind. Out your control a beam of 
+black magic envelops the wizard. all that remains is dust. oh well free house."""
 
     choice1 = "Game"
     choice2 = "Over"
@@ -114,7 +114,7 @@ def stay():
     hdr_statement = "A Treasure to Hold Dear"
 
     path = """The wizard rests his hand on your head and in an instant millenia of arcane knowledge floods your mind. after 
-    that you arent that up for thinking, or anything for that matter. even so you make a great coat rack. """
+    that you aren't that up for thinking, or anything for that matter. even so you make a great coat rack. """
 
     choice1 = "Game"
     choice2 = "Over"
@@ -145,8 +145,8 @@ def assault():
 def face():
     hdr_statement = "You're under Arrest!! Time to 'face' the charges!"
     path = """as the wizard recoils from the blow he begins to yell at 
-            obsenities at you. before long he has called the authorities
-            and you are arrested for assualt"""
+            obsenities at you. Before long he has called the authorities
+            and you are arrested for assualt."""
 
     choice1 = "Game"
     choice2 = "Over"
@@ -158,8 +158,8 @@ def face():
 @app.route("/'staff'")
 def staff():
     hdr_statement = "Jeweled jewels"
-    path = """A thunderous blow is delivered upon the wizard as as an audible
-            thud is heard as he recoils on the floor. As the authorities arrive
+    path = """A thunderous blow is delivered upon the wizard, an audible
+            thud is heard as he recoils on the floor. When the authorities arrive
             to arrest you the glint of a dark jewel that seems to resonate dark 
             power wobbles on the floor. The wizard is then arrested in your stead
             for holding world ending magics and failure to file his taxes. you 
